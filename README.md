@@ -1,13 +1,21 @@
-# API de Facturación
+API RESTful para gestión de facturación con autenticación JWT y pruebas automatizadas integradas.
 
-Backend RESTful con autenticación JWT para la gestión de facturas.
-
+Este proyecto combina desarrollo backend con aseguramiento de calidad (QA), permitiendo validar automáticamente el funcionamiento de la API.
 ## Tecnologías
 - Node.js
 - Express
 - MongoDB
-- JWT
+- JWT (Autenticación)
 - Swagger (OpenAPI)
+- Postman + Newman (Automatización de pruebas)
+
+  ## Enfoque QA
+
+Este proyecto implementa automatización de pruebas como parte del desarrollo, permitiendo:
+
+- Validar endpoints automáticamente
+- Detectar errores de forma temprana
+- Ejecutar pruebas completas con un solo comando
 
 ## Instalación
 npm install
