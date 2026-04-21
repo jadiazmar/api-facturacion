@@ -95,3 +95,30 @@ postman/mini-erp.postman_collection.json
 ✔ Login
 ✔ Crear factura
 ✔ Listar facturas
+
+Pruebas automáticas con Playwright (nuevo)
+
+Se implementaron pruebas automatizadas adicionales usando Playwright para validar el flujo completo de autenticación.
+
+Ejecutar:
+npx playwright test
+Casos probados:
+Registro de usuario
+Login exitoso
+Login con credenciales incorrectas
+Uso de token JWT
+Acceso a ruta protegida /api/users/profile
+Resultado esperado
+
+Si todo está correcto, verás algo como:
+
+✔ Registrar un nuevo usuario
+✔ Login
+✔ Crear factura
+✔ Listar facturas
+✔ Acceso a ruta protegida
+✔ Tests Playwright exitosos (7 passed)
+
+<img width="921" height="406" alt="image" src="https://github.com/user-attachments/assets/19e2577e-73ea-416d-b72a-c4ca1cb689e3" />
+<img width="921" height="119" alt="image" src="https://github.com/user-attachments/assets/dd76a930-dc2d-451d-9585-8ef87899975e" />
+
