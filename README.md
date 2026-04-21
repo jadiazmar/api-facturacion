@@ -1,4 +1,5 @@
 API RESTful para gestión de facturación con autenticación JWT y pruebas automatizadas integradas.
+# Mini ERP API - Backend + QA Automation
 
 Este proyecto combina desarrollo backend con aseguramiento de calidad (QA), permitiendo validar automáticamente el funcionamiento de la API.
 ## Tecnologías
@@ -121,4 +122,19 @@ Si todo está correcto, verás algo como:
 
 <img width="921" height="406" alt="image" src="https://github.com/user-attachments/assets/19e2577e-73ea-416d-b72a-c4ca1cb689e3" />
 <img width="921" height="119" alt="image" src="https://github.com/user-attachments/assets/dd76a930-dc2d-451d-9585-8ef87899975e" />
+
+## Valor del proyecto
+
+Este proyecto demuestra:
+
+- Desarrollo backend con Node.js y Express
+- Implementación de autenticación segura con JWT
+- Protección de rutas mediante middleware
+- Automatización de pruebas con Postman y Playwright
+- Validación de flujos completos de usuario (registro, login, acceso protegido)
+- Resolución de errores reales (404, 401, autenticación)
+
+##  Autor
+
+Julian Adolfo Díaz Márquez
 
