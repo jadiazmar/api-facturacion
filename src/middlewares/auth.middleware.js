@@ -15,7 +15,6 @@ module.exports = (req, res, next) => {
             token = token.split(" ")[1];
         }
 
-        // 🔥 AQUÍ ESTÁ LO QUE FALTABA
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
         req.user = decoded; // guardamos el usuario

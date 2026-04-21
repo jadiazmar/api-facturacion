@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-// 🔥 Helper para generar emails únicos
+//Helper para generar emails únicos
 function generarEmail() {
     return `test${Date.now()}@mail.com`;
 }
@@ -30,7 +30,6 @@ test('No permite registrar email duplicado', async ({ request }) => {
     const email = generarEmail();
 
     // Primer registro
-    // ✅ BIEN
     await request.post('http://localhost:3000/api/auth/register', {
         data: {
             name: 'User1',

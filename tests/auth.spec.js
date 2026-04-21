@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-// 🧪 Registro
+// Registro
 test('Registro de usuario', async ({ request }) => {
     const response = await request.post('http://localhost:3000/api/auth/register', {
         data: {
@@ -19,7 +19,7 @@ test('Registro de usuario', async ({ request }) => {
 });
 
 
-// 🔐 Login
+// Login
 test('Login de usuario', async ({ request }) => {
 
     const email = `julian${Date.now()}@test.com`;
@@ -50,12 +50,12 @@ test('Login de usuario', async ({ request }) => {
 });
 
 
-// 🔥 Ruta protegida
+// Ruta protegida
 test('Acceso a ruta protegida con JWT', async ({ request }) => {
 
     const email = `julian${Date.now()}@test.com`;
 
-    // ✅ Crear usuario (CORRECCIÓN)
+    //Crear usuario (CORRECCIÓN)
     await request.post('http://localhost:3000/api/auth/register', {
         data: {
             name: 'Julian Test',
@@ -64,7 +64,7 @@ test('Acceso a ruta protegida con JWT', async ({ request }) => {
         }
     });
 
-    // ✅ Login con el mismo usuario (CORRECCIÓN)
+    //Login con el mismo usuario (CORRECCIÓN)
     const login = await request.post('http://localhost:3000/api/auth/login', {
         data: {
             email,
