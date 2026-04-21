@@ -43,7 +43,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"name\": \"resate\",\r\n  \"email\": \"julios2@email.com\",\r\n  \"password\": \"098765\"\r\n}\r\n",
+          "raw": "{\r\n  \"name\": \"resate\",\r\n  \"email\": \"liios2@email.com\",\r\n  \"password\": \"098765\"\r\n}\r\n",
           "options": {
             "raw": {
               "language": "json"
@@ -87,7 +87,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"email\": \"teresa2@email.com\",\n  \"password\": \"098765\"\n}",
+          "raw": "{\n  \"email\": \"liios2@email.com\",\n  \"password\": \"098765\"\n}",
           "options": {
             "raw": {
               "language": "json"

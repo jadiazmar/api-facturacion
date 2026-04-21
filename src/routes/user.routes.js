@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const auth = require('../middlewares/auth.middleware');
-const { getUsers } = require('../controllers/user.controller');
+const { getUsers, getProfile } = require('../controllers/user.controller');
 
 /**
  * @swagger
@@ -32,5 +32,21 @@ const { getUsers } = require('../controllers/user.controller');
  *         description: No autorizado
  */
 router.get('/', auth, getUsers);
+
+/**
+ * @swagger
+ * /api/users/profile:
+ *   get:
+ *     summary: Obtener perfil del usuario autenticado
+ *     tags: [Users]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Perfil del usuario
+ *       401:
+ *         description: No autorizado
+ */
+router.get('/profile', auth, getProfile);
 
 module.exports = router;
